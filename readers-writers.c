@@ -78,3 +78,4 @@ void *Reader(void *arg)
 
 }
 
+//menggunakan semaphore dan mutex lock
