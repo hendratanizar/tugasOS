@@ -1,0 +1,37 @@
+Soal untuk Program 5.41
+
+1. Untuk apakah tujuan program ini?
+
+Tujuan program ini adalah untuk mengasumsikan bahwa jumlah sumber daya yang terbatas (MAX_RESOURCES) dari satu jenis sumber daya harus mampu dikelola dengan baik. Dan dengan modifikasi semaphore atau mutex (mutual exclusion) lock yang bertujuan untuk mengendalikan lokasi dimana race condition terjadi, sehingga proses kelola pun dapat berjalan lebih baik.
+
+2. Section berapa yang menjelaskan program ini?
+
+Section yang menjelaskan program ini adalah pada Chapter 5 Process Synchronization pada Section 5.5 mengenai Mutex Locks, Section 5.6 mengenai Semaphores, dan Section 5.7 mengenai Classic Problems of Synchronization yang membahas bagaimana mutex lock diaplikasikan.
+
+3. Jelaskan logika program ini!
+
+Program ini memiliki alur logika bahwa saat aplikasi dimulai, jumlah lisensi akan berkurang, dan apabila aplikasi dihentikan maka file jumlah lisensi akan bertambah. Jika semua lisensi sedang digunakan, maka permintaan untuk memulai aplikasi ditolak, permintaan tersebut hanya akan diberikan jika pemegang lisensi menghentikan aplikasi dan jumlah lisensinya kembali. Terkait dengan pertanyaan c, untuk modifikasi dengan sempahore atau mutex lock, program ini memiliki alur logika yang ikut termodifikasi pula, diantaranya alur logika ini mengarah kepada race condition. Dimana, tujuan dari semaphore atau mutex lock ini sendiri adalah untuk memperbaiki kinerja sehingga race condition  dapat terkendali. 
+
+Program tersebut dieksekusi melalui int main terlebih dahulu, sewaktu program berjalan serial number atau available_resources nya berkurang jadi kita panggil fungsi untuk mengurangi nilainya available_resources tersebut. 
+
+4. Apa guna source code (5.41) ini?
+
+Tujuan source code ini adalah untuk menampilkan bagaimana available_resources dapat beroperasi ketika program dirunning. Lalu, untuk mengidentifikasi di lokasi manakah race condition terjadi, itulah mengapa diperlukan tambahan semaphore atau mutual-exclusion lock, tujuannya adalah untuk melindungi critical regions dan untuk mengendalikan race condition pada program tersebut.
+
+5. File Penjelasan dan Source Code upload ke GitHub
+
+jawaban berupa link Github yang berisikan Source Code dan File Penjelasan 5 Soal ini.
+
+
+
+Tambahan pada Soal 5.41
+
+a. Identifikasi data yang terlibat dalam race condition.
+
+-> Jadi, data yang terlibat dalam race condition itu adalah yang di available_resources. data ini lah yang berperan dalam proses berjalannya lisensi. maka, race condition pun juga berperan besar dalam available resourcenya.
+
+b. Identifikasi lokasi dimana race condition terjadi.
+
+-> Lokasi kode tempat kondisi race condition tersebut adalah di decrease_count dan increase_count.
+
+Terima kasih dan Tuhan memberkati! :)
