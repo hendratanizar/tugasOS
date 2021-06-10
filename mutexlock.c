@@ -39,3 +39,10 @@ int main(){
 }
 
 //available resources = 5 pertama kali
+//untuk program ini, masih ada error beberapa pak... jadi nanti akan saya perbaiki lagi :)
+
+
+//Nama Kelompok :
+//Hendra NPM 203400013
+//Yohanes Calvin NPM 203400008
+
