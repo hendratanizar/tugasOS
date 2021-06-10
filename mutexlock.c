@@ -39,7 +39,7 @@ int main(){
 }
 
 //available resources = 5 pertama kali
-//untuk program ini, masih ada error beberapa pak... jadi nanti akan saya perbaiki lagi :)
+//untuk program ini, sudah disertakan mutex lock, namun masih ada error beberapa pak... jadi nanti akan saya perbaiki lagi :)
 
 
 //Nama Kelompok :
