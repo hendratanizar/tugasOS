@@ -1,5 +1,11 @@
 Soal untuk Program 5.41
 
+Nama Kelompok :
+
+Hendra/203400013
+Yohanes Calvin/203400008
+
+
 1. Untuk apakah tujuan program ini?
 
 Tujuan program ini adalah untuk mengasumsikan bahwa jumlah sumber daya yang terbatas (MAX_RESOURCES) dari satu jenis sumber daya harus mampu dikelola dengan baik. Dan dengan modifikasi semaphore atau mutex (mutual exclusion) lock yang bertujuan untuk mengendalikan lokasi dimana race condition terjadi, sehingga proses kelola pun dapat berjalan lebih baik.
